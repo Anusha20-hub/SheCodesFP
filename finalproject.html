@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinalProject</title>
+</head>
+<style>
+    div{
+        background:rgb(248, 171, 5);
+    
+    }
+    h1{
+        color:hsl(210, 17%, 93%);
+        text-align: center;
+        text-decoration-style: wavy;
+        font-size:60px;
+        
+    }
+    h2{
+        color:white;
+        text-align:center;
+        text-decoration: none;
+        padding:15px;
+        font-size: 30px;
+        font:weight 25;
+    }
+    img{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    p{
+        line-height: 2.0;
+        font-weight:lighter;
+        font-size: 20px;
+        margin: 20px 0 10px;
+        }
+        button{
+            display: block;
+            margin: 20px auto;
+            background:orangered;
+            color: white;
+            font-size: 18px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: all 200ms ease-in-out;
+        }
+        button:hover {
+            color:orange;
+            background-color: navajowhite;
+            opacity: 0.9;
+            cursor: pointer;
+        }
+        
+        .learn-more {
+            color: orangered;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .learn-more:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            text-decoration: none;
+        }
+        .footer:hover{
+            text-decoration: underline;
+        }
+        
+</style>
+
+<body>
+    <div class="container">
+    <h1><strong>
+        🍛 Popular Indian Cuisine 🍛
+        </strong>
+    </h1>
+    <h2>
+        <em>
+        😋🍲Hyderabadi Biryani🍲😋
+        </em>
+        <hr />
+    </h2>
+    <br />
+    <img src="https://assets.gqindia.com/photos/5ddcbd00836a7f0008bf48a4/16:9/w_1366%2cc_limit/biryani-gurugram.jpg" width="1000"/>
+
+    <p><em>Hyderabadi cuisine had become a princely legacy of the Nizams of Hyderabad State, as it began to further develop further
+on from there. It is an amalgamation of Mughal, Turkish, and Arabic along with the influence of the native Telugu and
+Marathwada cuisines. Hyderabadi cuisine comprises a broad repertoire of rice, wheat and meat dishes and the skilled use
+of various spices, herbs and natural edibles.
+
+Hyderabadi cuisine has different recipes for different events, and hence is categorized accordingly, from banquet food,
+for weddings and parties, festival foods, and travel foods. The category to which the recipe belongs itself speaks of
+different things like the time required to prepare the food, the shelf life of the prepared item, etc.
+
+The legacy of authentic Hyderabadi cuisine and its unabridged royal saga of dishes and recipes is believed to still
+          persist with old Deccan families.
+        </em>
+    </p>
+    <a href="https//https://en.wikipedia.org/wiki/Hyderabadi_cuisine"target="_blank"class="learn-more">
+    Learn more on wikipedia
+    </a>
+    <button>
+        👉buy Hyderabadi Biryani👈
+    </button>
+    <hr />
+    <p class="footer">
+    This page was built by 
+    <a href="http:https://www.facebook.com/anushasharma.g" target="_blank">
+     Anusha Sharma G
+    </a>
+    </p>
+    </div>
+    <script>
+        function buyBiryani(){
+            let name = prompt("what is your name?");
+            let nationality = prompt(`Hi ${name}, What is your nationality?`);
+            let cuisine = prompt(`${name},Do you like Indian food?`);
+            if(cuisine=="yes"){
+                alert("Thank you,"+name+"... Order Biryani soon😋🤗😋")
+            }else{
+                alert("Thank you,enjoy your food😋😋");
+            }
+            }
+        let buyButton = document.querySelector("button");
+            buyButton.addEventListener("click", buyBiryani);
+    </script>
+</body>
+</html>
+
+
